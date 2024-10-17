@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleCalculator</title>
+
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SimpleCalculator</h1>
+        </div>
+        <div class="display-container">
+            <h3 id="display">0</h3>
+        </div>
+        <table class="btn-table">
+            <tr>
+                <td><button onclick="addToDisplay('AC')" class="grey-btn">AC</button></td>
+                <td><button onclick="addToDisplay('+/-')" class="grey-btn">+/-</button></td>
+                <td><button onclick="addToDisplay('%')" class="grey-btn">%</button></td>
+                <td><button onclick="addToDisplay('÷')" class="orange-btn">÷</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addToDisplay('7')" class="dark-grey-btn">7</button></td>
+                <td><button onclick="addToDisplay('8')" class="dark-grey-btn">8</button></td>
+                <td><button onclick="addToDisplay('9')" class="dark-grey-btn">9</button></td>
+                <td><button onclick="addToDisplay('x')" class="orange-btn">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addToDisplay('4')" class="dark-grey-btn">4</button></td>
+                <td><button onclick="addToDisplay('5')" class="dark-grey-btn">5</button></td>
+                <td><button onclick="addToDisplay('6')" class="dark-grey-btn">6</button></td>
+                <td><button onclick="addToDisplay('-')" class="orange-btn">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addToDisplay('1')" class="dark-grey-btn">1</button></td>
+                <td><button onclick="addToDisplay('2')" class="dark-grey-btn">2</button></td>
+                <td><button onclick="addToDisplay('3')" class="dark-grey-btn">3</button></td>
+                <td><button onclick="addToDisplay('+')" class="orange-btn">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="addToDisplay('0')" class="zero-btn">0</button></td>
+                <td><button onclick="addToDisplay('.')" class="dark-grey-btn">.</button></td>
+                <td><button onclick="addToDisplay('=')" class="orange-btn">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
